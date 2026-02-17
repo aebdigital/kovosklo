@@ -580,7 +580,7 @@
     left: -5%;
     width: 110%;
     height: 120%;
-    background-image: url('../sources/referencie/Hlohovec-most/9.jpg');
+    background-image: url('../sources/referencie/Hlohovec-most/9.webp');
     background-size: 120%;
     background-position: center;
     background-attachment: scroll;
@@ -893,7 +893,7 @@
     align-items: center;
     justify-content: center;
     height: 250px;
-    background: url('../sources/slider1.jpg');
+    background: url('../sources/slider1.webp');
     background-size: cover;
     background-position: center;
     position: relative;

@@ -62,7 +62,7 @@ function loadFooter() {
             <div class="footer-main">
                 <!-- Logo Section -->
                 <div class="footer-logo-section">
-                    <img src="${basePath}sources/logo.png" alt="Stavomontáže, Kovo-Sklo" class="footer-logo-image">
+                    <img src="${basePath}sources/logo.webp" alt="Stavomontáže, Kovo-Sklo" class="footer-logo-image">
                 </div>
                 
                 <!-- Navigation Column -->

@@ -82,7 +82,7 @@ function loadHeaderFallback() {
                 </ul>
                 <div class="nav-logo">
                     <a href="/" class="logo-link">
-                        <img src="${basePath}sources/logo.png" alt="Stavomontáže, Kovo-Sklo s.r.o." class="logo-image">
+                        <img src="${basePath}sources/logo.webp" alt="Stavomontáže, Kovo-Sklo s.r.o." class="logo-image">
                     </a>
                 </div>
                 <ul class="nav-menu nav-menu-right">
@@ -102,7 +102,7 @@ function loadHeaderFallback() {
         <div class="mobile-sidebar">
             <div class="mobile-sidebar-header">
                 <div class="mobile-sidebar-logo">
-                    <img src="${basePath}sources/logo.png" alt="Stavomontáže, Kovo-Sklo">
+                    <img src="${basePath}sources/logo.webp" alt="Stavomontáže, Kovo-Sklo">
                 </div>
                 <button class="mobile-close-btn">✕</button>
             </div>
@@ -170,7 +170,7 @@ function loadFooterFallback() {
             <div class="footer-main">
                 <!-- Logo Section -->
                 <div class="footer-logo-section">
-                    <img src="${basePath}sources/logo.png" alt="Stavomontáže, Kovo-Sklo" class="footer-logo-image">
+                    <img src="${basePath}sources/logo.webp" alt="Stavomontáže, Kovo-Sklo" class="footer-logo-image">
                 </div>
                 
                 <!-- Navigation Column -->
