@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Allow access to CSS and JS files
+Allow: /css/
+Allow: /js/
+Allow: /sources/
+
+# Disallow sensitive files
+Disallow: /CLAUDE.md
+Disallow: /*.log$
+Disallow: /*.json$
+Disallow: /.htaccess
+
+# Sitemap location
+Sitemap: https://kp-weld.sk/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1

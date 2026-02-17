@@ -1,0 +1,324 @@
+/* About Us Page Specific Styles */
+
+
+/* About Main Section - O nas page */
+.about-main-section {
+    padding: 60px 0;
+    background: #ffffff;
+}
+
+.about-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: stretch;
+    min-height: 600px;
+}
+
+.about-text-content {
+    width: 100%;
+}
+
+.about-accent-line {
+    width: 60px;
+    height: 3px;
+    background: var(--primary-color);
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Only left-align the accent line in about-main-section, not intro-section */
+.about-main-section .about-accent-line {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.about-main-title {
+    font-size: var(--font-size-3xl);
+    font-weight: 300;
+    color: #000000;
+    margin-bottom: 2rem;
+    line-height: var(--line-height-tight);
+}
+
+.about-description {
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-relaxed);
+    color: rgb(34, 34, 34);
+    margin-bottom: 1rem;
+}
+
+.about-image-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: calc(100% + 2rem);
+    margin-left: 2rem;
+}
+
+.about-image-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+   
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-track {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.slider-image.active {
+    opacity: 1;
+}
+
+
+/* Responsive Design for About Section */
+@media (max-width: 768px) {
+    .about-main-section {
+        padding: 60px 0;
+    }
+
+    .about-content-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-areas: "image" "content";
+        gap: 3rem;
+    }
+    
+    .intro-content h1 {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .intro-content p {
+        font-size: var(--font-size-base);
+    }
+
+    .about-text-content {
+        grid-area: content;
+        padding: 0;
+    }
+
+    .about-image-content {
+        grid-area: image;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .about-main-title {
+        font-size: var(--font-size-2xl);
+    }
+
+    .about-description {
+        font-size: var(--font-size-base);
+        margin-bottom: 0.5rem;
+    }
+
+    .about-image-slider {
+        height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-main-section {
+        padding: 30px 0;
+    }
+
+    .about-content-wrapper {
+        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .intro-content h1 {
+        font-size: var(--font-size-xl);
+    }
+    
+    .intro-content p {
+        font-size: var(--font-size-sm);
+    }
+
+    .about-main-title {
+        font-size: var(--font-size-2xl);
+        margin-bottom: 1.5rem;
+    }
+
+    .about-description {
+        font-size: var(--font-size-base);
+        margin-bottom: 2rem;
+    }
+
+    .about-image-slider {
+        height: 300px;
+    }
+}
+
+/* Team Section Styles */
+.team-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.team-title {
+    font-size: var(--font-size-3xl);
+    font-weight: 300;
+    color: #333;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.team-member {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-top: 4px solid var(--primary-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.team-member h3 {
+    font-size: var(--font-size-lg);
+    font-weight: 300;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.team-member p {
+    font-size: var(--font-size-base);
+    color: #555;
+    line-height: var(--line-height-relaxed);
+    margin-bottom: 8px;
+}
+
+.team-member p:last-child {
+    margin-bottom: 0;
+}
+
+/* Team Section Responsive Design */
+@media (max-width: 768px) {
+    .team-section {
+        padding: 60px 0;
+    }
+    
+    .team-title {
+        font-size: var(--font-size-2xl);
+        margin-bottom: 40px;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .team-member {
+        padding: 30px 25px;
+    }
+    
+    .team-member h3 {
+        font-size: var(--font-size-base);
+    }
+    
+    .team-member p {
+        font-size: var(--font-size-sm);
+    }
+}
+
+/* Alternating Layout for About Sections */
+.about-main-section.reverse .about-content-wrapper {
+    grid-template-areas: "image content";
+}
+
+.about-main-section.reverse .about-text-content {
+    grid-area: content;
+    order: 2;
+}
+
+.about-main-section.reverse .about-image-content {
+    grid-area: image;
+    order: 1;
+    width: calc(100% + 2rem);
+    margin-left: -2rem;
+    margin-right: 2rem;
+}
+
+@media (max-width: 768px) {
+    .about-main-section.reverse .about-content-wrapper {
+        grid-template-areas: "image" "content";
+        grid-template-columns: 1fr;
+    }
+    
+    .about-main-section.reverse .about-image-content {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+/* Static Image Styles */
+.about-single-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+   
+}
+
+.static-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+.static-image:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design for Static Images */
+@media (max-width: 768px) {
+    .about-single-image {
+        height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-single-image {
+        height: 300px;
+    }
+}

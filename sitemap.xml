@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://kovo-sklo.sk/</loc>
+    <lastmod>2024-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Main Pages -->
+  <url>
+    <loc>https://kovo-sklo.sk/o-nas</loc>
+    <lastmod>2024-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://kovo-sklo.sk/kontakt</loc>
+    <lastmod>2024-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://kovo-sklo.sk/referencie</loc>
+    <lastmod>2024-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://kovo-sklo.sk/projekt-detail</loc>
+    <lastmod>2024-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Service Pages -->
+  <url>
+    <loc>https://kovo-sklo.sk/sluzba/ocelove-konstrukcie</loc>
+    <lastmod>2024-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://kovo-sklo.sk/sluzba/zamocnicke-vyrobky</loc>
+    <lastmod>2024-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://kovo-sklo.sk/sluzba/klampiarske-prace</loc>
+    <lastmod>2024-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://kovo-sklo.sk/sluzba/oplastenie-konstrukcii</loc>
+    <lastmod>2024-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://kovo-sklo.sk/sluzba/povrchova-uprava</loc>
+    <lastmod>2024-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://kovo-sklo.sk/sluzba/predaj-hutnickeho-materialu</loc>
+    <lastmod>2024-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
