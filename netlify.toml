@@ -1,0 +1,163 @@
+[build]
+  publish = "."
+
+# Headers for caching static assets
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  for = "*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  for = "*.jpeg"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  for = "*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+  for = "*.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+
+# Block access to sensitive files
+[[headers]]
+  for = "*.md"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+
+# Clean URLs - main pages
+[[redirects]]
+  from = "/o-nas"
+  to = "/pages/o-nas.html"
+  status = 200
+
+[[redirects]]
+  from = "/kontakt"
+  to = "/pages/kontakt.html"
+  status = 200
+
+[[redirects]]
+  from = "/referencie"
+  to = "/pages/referencie.html"
+  status = 200
+
+[[redirects]]
+  from = "/projekt-detail"
+  to = "/pages/projekt-detail.html"
+  status = 200
+
+[[redirects]]
+  from = "/ochrana-osobnych-udajov"
+  to = "/pages/ochrana-osobnych-udajov.html"
+  status = 200
+
+# Clean URLs - service pages
+[[redirects]]
+  from = "/sluzba/ocelove-konstrukcie"
+  to = "/pages/service-page/ocelove-konstrukcie.html"
+  status = 200
+
+[[redirects]]
+  from = "/sluzba/zamocnicke-vyrobky"
+  to = "/pages/service-page/zamocnicke-vyrobky.html"
+  status = 200
+
+[[redirects]]
+  from = "/sluzba/povrchova-uprava"
+  to = "/pages/service-page/povrchova-uprava.html"
+  status = 200
+
+[[redirects]]
+  from = "/sluzba/oplastenie-konstrukcii"
+  to = "/pages/service-page/oplastenie-konstrukcii.html"
+  status = 200
+
+[[redirects]]
+  from = "/sluzba/klampiarske-prace"
+  to = "/pages/service-page/klampiarske-prace.html"
+  status = 200
+
+[[redirects]]
+  from = "/sluzba/predaj-hutnickeho-materialu"
+  to = "/pages/service-page/predaj-hutnickeho-materialu.html"
+  status = 200
+
+# Redirect old /pages/ URLs to clean URLs (301)
+[[redirects]]
+  from = "/pages/o-nas.html"
+  to = "/o-nas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pages/kontakt.html"
+  to = "/kontakt"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pages/referencie.html"
+  to = "/referencie"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pages/projekt-detail.html"
+  to = "/projekt-detail"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pages/ochrana-osobnych-udajov.html"
+  to = "/ochrana-osobnych-udajov"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pages/service-page/ocelove-konstrukcie.html"
+  to = "/sluzba/ocelove-konstrukcie"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pages/service-page/zamocnicke-vyrobky.html"
+  to = "/sluzba/zamocnicke-vyrobky"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pages/service-page/povrchova-uprava.html"
+  to = "/sluzba/povrchova-uprava"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pages/service-page/oplastenie-konstrukcii.html"
+  to = "/sluzba/oplastenie-konstrukcii"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pages/service-page/klampiarske-prace.html"
+  to = "/sluzba/klampiarske-prace"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pages/service-page/predaj-hutnickeho-materialu.html"
+  to = "/sluzba/predaj-hutnickeho-materialu"
+  status = 301
+  force = true
