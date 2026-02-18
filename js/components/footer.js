@@ -44,8 +44,8 @@ function loadFooter() {
     
     if (isInServicePage) {
         // We're in /sluzba/ (which maps to /pages/service-page/)
-        basePath = '';  // To reach root for index.html
-        pagesPath = '';    // Use basePath for clean URLs
+        basePath = '../';  // To reach root from /sluzba/
+        pagesPath = '../';    // Use basePath for clean URLs
     } else if (isInPagesDir) {
         // We're in /pages/ - stay in pages directory for other pages
         basePath = '../';     // To reach root for index.html

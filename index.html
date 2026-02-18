@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="sk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- SEO Meta Tags -->
     <title>Stavomontáže, Kovo-Sklo s.r.o. - Oceľové konštrukcie a zámočnícke výrobky | Banská Bystrica</title>
-    <meta name="description" content="Stavomontáže, Kovo-Sklo s.r.o. - Firma s dlhoročnými skúsenosťami v oblasti výroby a montáže oceľových konštrukcií všetkých typov. Zámočnícke výrobky, povrchová úprava, predaj hutníckeho materiálu.">
-    <meta name="keywords" content="oceľové konštrukcie, zámočnícke výrobky, povrchová úprava, hutnícky materiál, klampiarske práce, Banská Bystrica, Stavomontáže">
+    <meta name="description"
+        content="Stavomontáže, Kovo-Sklo s.r.o. - Firma s dlhoročnými skúsenosťami v oblasti výroby a montáže oceľových konštrukcií všetkých typov. Zámočnícke výrobky, povrchová úprava, predaj hutníckeho materiálu.">
+    <meta name="keywords"
+        content="oceľové konštrukcie, zámočnícke výrobky, povrchová úprava, hutnícky materiál, klampiarske práce, Banská Bystrica, Stavomontáže">
     <meta name="author" content="Stavomontáže, Kovo-Sklo s.r.o.">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://wens.sk/">
-    <meta property="og:title" content="Art Projekt s.r.o. - Komplexné stavebné práce a projektovanie">
-    <meta property="og:description" content="Odborníci na stavebníctvo a projektovanie v Trnave. Komplexné služby od návrhu po realizáciu.">
-    <meta property="og:image" content="https://artprojekt.sk/sources/slider1.webp">
-   
+    <meta property="og:url" content="https://kovo-sklo.sk/">
+    <meta property="og:title" content="Stavomontáže, Kovo-Sklo s.r.o. - Oceľové konštrukcie a zámočnícke výrobky">
+    <meta property="og:description"
+        content="Kvalitné riešenia v oblasti výroby a montáže oceľových konštrukcií a zámočníckych výrobkov s viac ako 40-ročnými skúsenosťami.">
+    <meta property="og:image" content="https://kovo-sklo.sk/sources/logo.webp">
+
     <link rel="icon" type="image/png" href="sources/favicon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="sources/favicon.png">
     <link rel="shortcut icon" href="sources/favicon.png">
@@ -28,39 +32,45 @@
     <!-- Page-specific CSS -->
     <link rel="stylesheet" href="css/home.css?v=14.0">
     <link rel="stylesheet" href="css/referencie.css?v=14.0">
-    
+
     <!-- GSAP scripts in head like working version -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
     <!-- Lenis Smooth Scrolling -->
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
-    
+
     <!-- Hero Animation Script -->
     <script>
-      window.addEventListener('load', () => {
-        gsap.set(".hero__sweep",{xPercent:-120, opacity:0.7});
-        gsap.timeline({defaults:{ease:"power2.out"}})
-          .fromTo(".hero__bg",{scale:1.12},{scale:1, duration:1.2}, 0)
-          .to(".hero__sweep",{xPercent:120, opacity:0, duration:0.9, clearProps:"all"}, 0.1);
-      });
+        window.addEventListener('load', () => {
+            gsap.set(".hero__sweep", { xPercent: -120, opacity: 0.7 });
+            gsap.timeline({ defaults: { ease: "power2.out" } })
+                .fromTo(".hero__bg", { scale: 1.12 }, { scale: 1, duration: 1.2 }, 0)
+                .to(".hero__sweep", { xPercent: 120, opacity: 0, duration: 0.9, clearProps: "all" }, 0.1);
+        });
     </script>
 </head>
+
 <body class="home-page">
     <!-- Navigation Container -->
     <div id="navigation-container"></div>
-    
+
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <!-- Hero Background -->
         <div class="hero-background">
-            <img class="hero-bg-image active" src="sources/referencie/Technicko-hygienicka-udrzba-zeleznicnych-kolajovych-vozidiel-Humenne/4.webp" alt="Technicko-hygienická údržba železničných koľajových vozidiel Humenné">
+            <img class="hero-bg-image active"
+                src="sources/referencie/Technicko-hygienicka-udrzba-zeleznicnych-kolajovych-vozidiel-Humenne/4.webp"
+                alt="Technicko-hygienická údržba železničných koľajových vozidiel Humenné">
             <img class="hero-bg-image" src="sources/referencie/Plosina-DOKA-DREVO/2.webp" alt="Plošina DOKA DREVO">
-            <img class="hero-bg-image" src="sources/referencie/IKEA-Bratislava-pilon/2.webp" alt="IKEA Bratislava - Pilon">
-            <img class="hero-bg-image" src="sources/referencie/Dunajska-Streda-Ocelova-konstrukcia-pre-vzduchotechniku/1.webp" alt="Dunajská Streda - Oceľová konštrukcia pre vzduchotechniku">
+            <img class="hero-bg-image" src="sources/referencie/IKEA-Bratislava-pilon/2.webp"
+                alt="IKEA Bratislava - Pilon">
+            <img class="hero-bg-image"
+                src="sources/referencie/Dunajska-Streda-Ocelova-konstrukcia-pre-vzduchotechniku/1.webp"
+                alt="Dunajská Streda - Oceľová konštrukcia pre vzduchotechniku">
         </div>
-        
+
         <!-- Hero Content -->
         <div class="hero-content">
             <!-- Left Bottom - Text -->
@@ -68,7 +78,8 @@
                 <h1 class="hero-title">Výrobca oceľových konštrukcií a zámočníckych výrobkov</h1>
                 <div class="hero-subtitle-content">
                     <p class="hero-subtitle">
-                        Firma s dlhoročnými skúsenosťami v oblasti výroby oceľových konštrukcií, dopravných a priemyselných stavieb. Zámočnícke výrobky, povrchová úprava a predaj hutníckeho materiálu.
+                        Firma s dlhoročnými skúsenosťami v oblasti výroby oceľových konštrukcií, dopravných a
+                        priemyselných stavieb. Zámočnícke výrobky, povrchová úprava a predaj hutníckeho materiálu.
                     </p>
                 </div>
                 <div class="hero-actions">
@@ -76,7 +87,7 @@
                     <a href="sluzba/ocelove-konstrukcie" class="cta-btn secondary">SLUŽBY</a>
                 </div>
             </div>
-            
+
             <!-- Right Bottom - Stats & Testimonial -->
             <div class="hero-right">
                 <!-- Stats Above Review -->
@@ -90,10 +101,10 @@
                         <div class="stat-label">rokov skúseností</div>
                     </div>
                 </div>
-                
+
                 <!-- Testimonial with White Blur -->
-                
-                
+
+
                 <!-- More testimonials link below the box -->
             </div>
         </div>
@@ -112,7 +123,8 @@
                     </div>
                     <div class="product-content">
                         <h3 class="product-title">Oceľové konštrukcie</h3>
-                        <p class="product-description">Zaisťujeme návrh a výrobu oceľových konštrukcií všetkých typov pre priemyselné aj nevýrobné odvetvia.</p>
+                        <p class="product-description">Zaisťujeme návrh a výrobu oceľových konštrukcií všetkých typov
+                            pre priemyselné aj nevýrobné odvetvia.</p>
                     </div>
                 </a>
 
@@ -123,7 +135,8 @@
                     </div>
                     <div class="product-content">
                         <h3 class="product-title">Zámočnícke výrobky</h3>
-                        <p class="product-description">Zámočnícke výrobky tvoria významnú časť výrobného programu firmy Stavomontáže, Kovo-Sklo s.r.o.</p>
+                        <p class="product-description">Zámočnícke výrobky tvoria významnú časť výrobného programu firmy
+                            Stavomontáže, Kovo-Sklo s.r.o.</p>
                     </div>
                 </a>
 
@@ -134,18 +147,21 @@
                     </div>
                     <div class="product-content">
                         <h3 class="product-title">Povrchová úprava</h3>
-                        <p class="product-description">Zabezpečujeme komplexnú povrchovú úpravu oceľových konštrukcií pre zvýšenie odolnosti a estetiky.</p>
+                        <p class="product-description">Zabezpečujeme komplexnú povrchovú úpravu oceľových konštrukcií
+                            pre zvýšenie odolnosti a estetiky.</p>
                     </div>
                 </a>
 
                 <!-- Service 4: Opláštenie oceľových konštrukcií -->
                 <a href="sluzba/oplastenie-konstrukcii" class="product-box">
                     <div class="product-image">
-                        <img src="sources/referencie/Trolejbusove-DEPO-Zilina/17.webp" alt="Opláštenie oceľových konštrukcií">
+                        <img src="sources/referencie/Trolejbusove-DEPO-Zilina/17.webp"
+                            alt="Opláštenie oceľových konštrukcií">
                     </div>
                     <div class="product-content">
                         <h3 class="product-title">Opláštenie oceľových konštrukcií</h3>
-                        <p class="product-description">Najčastejším využitím oceľových konštrukcií v priemyselnom stavebníctve sú oceľové haly.</p>
+                        <p class="product-description">Najčastejším využitím oceľových konštrukcií v priemyselnom
+                            stavebníctve sú oceľové haly.</p>
                     </div>
                 </a>
 
@@ -156,7 +172,8 @@
                     </div>
                     <div class="product-content">
                         <h3 class="product-title">Klampiarske práce</h3>
-                        <p class="product-description">Klampiarske prvky používame ako ochranný, funkčný a estetický doplnok pre opláštenie oceľových konštrukcií.</p>
+                        <p class="product-description">Klampiarske prvky používame ako ochranný, funkčný a estetický
+                            doplnok pre opláštenie oceľových konštrukcií.</p>
                     </div>
                 </a>
 
@@ -167,7 +184,8 @@
                     </div>
                     <div class="product-content">
                         <h3 class="product-title">Predaj hutníckeho materiálu</h3>
-                        <p class="product-description">Predaj hutníckeho materiálu a plechov. Ponúkame široký sortiment oceľových profilov.</p>
+                        <p class="product-description">Predaj hutníckeho materiálu a plechov. Ponúkame široký sortiment
+                            oceľových profilov.</p>
                     </div>
                 </a>
             </div>
@@ -186,29 +204,43 @@
                         <h2 class="about-title">O našej spoločnosti</h2>
                     </div>
                     <div class="about-description">
-                        <p>Stavomontáže, Kovo-Sklo s.r.o. je firma s dlhoročnými skúsenosťami v oblasti výroby a montáže oceľových konštrukcií všetkých typov. Od jednoduchých zámočníckych výrobkov až po oceľové konštrukcie veľkých priemyselných objektov.</p>
+                        <p>Stavomontáže, Kovo-Sklo s.r.o. je firma s dlhoročnými skúsenosťami v oblasti výroby a montáže
+                            oceľových konštrukcií všetkých typov. Od jednoduchých zámočníckych výrobkov až po oceľové
+                            konštrukcie veľkých priemyselných objektov.</p>
 
-                        <p>Oceľové konštrukcie sa v priestoroch firmy v Banskej Bystrici vyrábajú už viac ako 40 rokov.</p>
+                        <p>Oceľové konštrukcie sa v priestoroch firmy v Banskej Bystrici vyrábajú už viac ako 40 rokov.
+                        </p>
 
-                        <p>Vďaka vlastnej výrobe je firma schopná flexibilne reagovať na požiadavky zákazníkov a pružne prispôsobiť termíny spracovania zákaziek.</p>
+                        <p>Vďaka vlastnej výrobe je firma schopná flexibilne reagovať na požiadavky zákazníkov a pružne
+                            prispôsobiť termíny spracovania zákaziek.</p>
 
-                        <p>Náš cieľ je prvotriedna kvalita spracovania oceľových konštrukcií a tiež povrchovej úpravy.</p>
+                        <p>Náš cieľ je prvotriedna kvalita spracovania oceľových konštrukcií a tiež povrchovej úpravy.
+                        </p>
 
-                        <p>Každý z našich zákazníkov má možnosť konzultovať všetky svoje dotazy s kvalifikovanými technikmi, ktorí Vám radi poradia s návrhom a realizáciou vášho projektu.</p>
+                        <p>Každý z našich zákazníkov má možnosť konzultovať všetky svoje dotazy s kvalifikovanými
+                            technikmi, ktorí Vám radi poradia s návrhom a realizáciou vášho projektu.</p>
                     </div>
                 </div>
-                
+
                 <div class="about-right">
                     <div class="about-services">
-                        <p>Vďaka našim skúsenostiam v oblasti oceľových a zámočníckych konštrukcií Vám ponúkneme optimálne riešenie s ohľadom na cenu, pri zachovaní vysokej kvality.</p>
+                        <p>Vďaka našim skúsenostiam v oblasti oceľových a zámočníckych konštrukcií Vám ponúkneme
+                            optimálne riešenie s ohľadom na cenu, pri zachovaní vysokej kvality.</p>
 
-                        <p>Priaznivé hospodárske výsledky, záruka kvality vlastnej produkcie, dodržania termínov realizácií a plná záruka za vykonané práce a diela ju predurčujú ako správnu voľbu pre realizáciu Vašich stavebných zámerov a projektov v oblasti oceľových konštrukcií, zámočníckych výrobkov v súkromnom aj priemyselnom sektore.</p>
+                        <p>Priaznivé hospodárske výsledky, záruka kvality vlastnej produkcie, dodržania termínov
+                            realizácií a plná záruka za vykonané práce a diela ju predurčujú ako správnu voľbu pre
+                            realizáciu Vašich stavebných zámerov a projektov v oblasti oceľových konštrukcií,
+                            zámočníckych výrobkov v súkromnom aj priemyselnom sektore.</p>
 
-                        <p>Ku každému projektu pristupujeme osobne a individuálne, každé zadanie je pre nás výzvou, ktorá nás posúva vpred.</p>
+                        <p>Ku každému projektu pristupujeme osobne a individuálne, každé zadanie je pre nás výzvou,
+                            ktorá nás posúva vpred.</p>
 
                         <h3>Výrobné priestory</h3>
-                        <p>Výrobný areál firmy Stavomontáže, Kovo-Sklo s.r.o. zaberá viac ako 9000 m². Najväčšia je hlavná výrobná hala, kde prebieha proces výroby oceľových konštrukcií. V klampiarskej dielni sa prevádza strihanie, ohraňovanie, ohýbanie a zakružovanie plechov všetkých rozmerov a hrúbok.</p>
-                        
+                        <p>Výrobný areál firmy Stavomontáže, Kovo-Sklo s.r.o. zaberá viac ako 9000 m². Najväčšia je
+                            hlavná výrobná hala, kde prebieha proces výroby oceľových konštrukcií. V klampiarskej dielni
+                            sa prevádza strihanie, ohraňovanie, ohýbanie a zakružovanie plechov všetkých rozmerov a
+                            hrúbok.</p>
+
                         <p><strong>Budeme radi, ak sa našim obchodným partnerom stanete aj Vy.</strong></p>
                     </div>
 
@@ -221,7 +253,7 @@
     </section>
 
     <!-- Process Section -->
-    
+
 
     <!-- Gallery Section -->
     <section id="gallery" class="gallery">
@@ -232,7 +264,8 @@
                 <!-- Project 1: Trolejbusové DEPO Žilina -->
                 <div class="project-card">
                     <a href="referencie" class="project-link">
-                        <div class="project-card-background" style="background-image: url('sources/referencie/Trolejbusove-DEPO-Zilina/11.webp')">
+                        <div class="project-card-background"
+                            style="background-image: url('sources/referencie/Trolejbusove-DEPO-Zilina/11.webp')">
                             <div class="project-content-overlay">
                                 <div class="project-category">Oceľové konštrukcie</div>
                                 <h3 class="project-card-title">Trolejbusové DEPO Žilina</h3>
@@ -241,11 +274,12 @@
                         </div>
                     </a>
                 </div>
-                
+
                 <!-- Project 2: KFC Banská Bystrica -->
                 <div class="project-card">
                     <a href="referencie" class="project-link">
-                        <div class="project-card-background" style="background-image: url('sources/referencie/KFC-Banska-Bystrica/5.webp')">
+                        <div class="project-card-background"
+                            style="background-image: url('sources/referencie/KFC-Banska-Bystrica/5.webp')">
                             <div class="project-content-overlay">
                                 <div class="project-category">Komerčné stavby</div>
                                 <h3 class="project-card-title">KFC Banská Bystrica</h3>
@@ -254,11 +288,12 @@
                         </div>
                     </a>
                 </div>
-                
+
                 <!-- Project 3: Tepláreň Stefe Banská Bystrica -->
                 <div class="project-card">
                     <a href="referencie" class="project-link">
-                        <div class="project-card-background" style="background-image: url('sources/referencie/Teplaren-Stefe-Banska-Bystrica/3.webp')">
+                        <div class="project-card-background"
+                            style="background-image: url('sources/referencie/Teplaren-Stefe-Banska-Bystrica/3.webp')">
                             <div class="project-content-overlay">
                                 <div class="project-category">Priemyselné stavby</div>
                                 <h3 class="project-card-title">Tepláreň Stefe Banská Bystrica</h3>
@@ -267,11 +302,12 @@
                         </div>
                     </a>
                 </div>
-                
+
                 <!-- More References Card -->
                 <div class="project-card">
                     <a href="referencie" class="project-link">
-                        <div class="project-card-background" style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));">
+                        <div class="project-card-background"
+                            style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));">
                             <div class="project-content-overlay">
                                 <div class="project-category">Všetky projekty</div>
                                 <h3 class="project-card-title">Viac referencií</h3>
@@ -290,13 +326,13 @@
     <!-- Scripts at bottom like working version -->
     <script src="js/fallback-components.js?v=14.0"></script>
     <script src="js/gsap-simple.js?v=14.0"></script>
-    
+
     <!-- Main JavaScript (ES6 modules) -->
     <script type="module" src="js/main.js?v=14.0"></script>
-    
+
     <!-- Random Image Loader Script -->
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             // Array of images from referencie folder - All Stavomontáže, Kovo-Sklo projects
             const referencieImages = [
                 // Trolejbusové DEPO Žilina
@@ -382,41 +418,41 @@
                 'sources/referencie/Pristavba-SAD-Banska-Bystrica/2.webp',
                 'sources/referencie/Pristavba-SAD-Banska-Bystrica/3.webp'
             ];
-            
+
             // Function to get random image
             function getRandomImage() {
                 return referencieImages[Math.floor(Math.random() * referencieImages.length)];
             }
-            
+
             // Assign random images to service cards
             const randomImageElements = document.querySelectorAll('.random-image');
-            randomImageElements.forEach(function(img) {
+            randomImageElements.forEach(function (img) {
                 img.src = getRandomImage();
             });
-            
+
             // Assign random images to hero background
             const heroImageElements = document.querySelectorAll('.random-hero-image');
-            heroImageElements.forEach(function(img) {
+            heroImageElements.forEach(function (img) {
                 img.src = getRandomImage();
             });
-            
+
             // Assign random images to gallery
             const galleryImageElements = document.querySelectorAll('.gallery-grid .random-image');
-            galleryImageElements.forEach(function(img) {
+            galleryImageElements.forEach(function (img) {
                 img.src = getRandomImage();
             });
 
             // Reduced parallax effect for about section
             const aboutBackground = document.querySelector('.about-background');
             if (aboutBackground) {
-                window.addEventListener('scroll', function() {
+                window.addEventListener('scroll', function () {
                     const scrolled = window.pageYOffset;
                     const aboutSection = document.querySelector('.about');
                     if (aboutSection) {
                         const sectionTop = aboutSection.offsetTop;
                         const sectionHeight = aboutSection.offsetHeight;
                         const windowHeight = window.innerHeight;
-                        
+
                         // Only apply parallax when section is in view
                         if (scrolled + windowHeight > sectionTop && scrolled < sectionTop + sectionHeight) {
                             const yPos = -(scrolled - sectionTop) * 0.1;
@@ -425,30 +461,30 @@
                     }
                 });
             }
-            
+
             // Hero background image slider with parallax
             const heroImages = document.querySelectorAll('.hero-bg-image');
             const heroSection = document.querySelector('.hero');
             let currentHeroIndex = 0;
-            
+
             function rotateHeroImages() {
                 // Remove active class from all images
                 heroImages.forEach(img => img.classList.remove('active'));
-                
+
                 // Add active class to current image
                 heroImages[currentHeroIndex].classList.add('active');
-                
+
                 // Move to next image
                 currentHeroIndex = (currentHeroIndex + 1) % heroImages.length;
             }
-            
+
             // Parallax effect for hero images
             function heroParallax() {
                 if (heroSection && heroImages.length > 0) {
                     const scrolled = window.pageYOffset;
                     const sectionHeight = heroSection.offsetHeight;
                     const windowHeight = window.innerHeight;
-                    
+
                     // Only apply parallax when hero section is in view
                     if (scrolled < sectionHeight + windowHeight) {
                         const yPos = scrolled * 0.15; // Subtle parallax multiplier
@@ -458,10 +494,10 @@
                     }
                 }
             }
-            
+
             // Add scroll event listener for parallax
             window.addEventListener('scroll', heroParallax);
-            
+
             if (heroImages.length > 0) {
                 // Start first rotation immediately, then every 4 seconds
                 setTimeout(rotateHeroImages, 4000); // First rotation after 4 seconds
@@ -470,4 +506,5 @@
         });
     </script>
 </body>
-</html> 
+
+</html>

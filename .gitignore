@@ -1,0 +1,10 @@
+# OS files
+.DS_Store
+
+# IDE files
+.claude/
+.vscode/
+.idea/
+
+# Backups and tests
+kovosklo OG - test/

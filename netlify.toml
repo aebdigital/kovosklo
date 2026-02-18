@@ -38,6 +38,12 @@
   [headers.values]
     X-Robots-Tag = "noindex"
 
+# Sitemap redirect
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/sitemap.xml"
+  status = 200
+
 # Clean URLs - main pages
 [[redirects]]
   from = "/o-nas"
