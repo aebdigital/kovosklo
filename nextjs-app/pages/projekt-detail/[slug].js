@@ -1,7 +1,8 @@
-import Head from 'next/head';
 import Link from 'next/link';
 import { useState } from 'react';
 import { projectsData } from '../../lib/projects';
+import SEO from '../../components/SEO';
+import { breadcrumbJsonLd, SITE_URL } from '../../lib/seo';
 
 export async function getStaticPaths() {
   return {
@@ -35,10 +36,30 @@ export default function ProjectDetail({ slug, project }) {
 
   return (
     <>
-      <Head>
-        <title>{project.name} - Stavomontáže, Kovo-Sklo s.r.o.</title>
-        <meta name="description" content={project.description} />
-      </Head>
+      <SEO
+        title={project.name}
+        description={project.description}
+        keywords={`${project.category.toLowerCase()}, ${project.name}, Stavomontáže, Kovo-Sklo, oceľové konštrukcie`}
+        image={heroImg}
+        type="article"
+        jsonLd={[
+          breadcrumbJsonLd([
+            { name: 'Domov', path: '/' },
+            { name: 'Referencie', path: '/referencie' },
+            { name: project.name, path: `/projekt-detail/${slug}` },
+          ]),
+          {
+            '@context': 'https://schema.org',
+            '@type': 'CreativeWork',
+            name: project.name,
+            description: project.description,
+            url: `${SITE_URL}/projekt-detail/${slug}`,
+            image: `${SITE_URL}${heroImg}`,
+            genre: project.category,
+            creator: { '@id': `${SITE_URL}/#business` },
+          },
+        ]}
+      />
 
       <section
         className="project-detail-hero contact-hero"

@@ -75,16 +75,18 @@ export default function Header() {
               <Link href="/kontakt" className={`nav-link ${isActive('/kontakt') ? 'active' : ''}`}>Kontakt</Link>
             </li>
           </ul>
-          <div
+          <button
+            type="button"
             className={`hamburger ${mobileOpen ? 'active' : ''}`}
-            onClick={() => setMobileOpen(!mobileOpen)}
-            role="button"
+            onClick={(e) => { e.stopPropagation(); setMobileOpen((v) => !v); }}
             aria-label="Toggle menu"
+            aria-expanded={mobileOpen}
+            style={{ background: 'none', border: 'none', padding: '10px', touchAction: 'manipulation' }}
           >
             <span></span>
             <span></span>
             <span></span>
-          </div>
+          </button>
         </div>
       </nav>
 

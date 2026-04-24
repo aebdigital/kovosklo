@@ -1,4 +1,5 @@
-import Head from 'next/head';
+import SEO from '../components/SEO';
+import { ORG_JSONLD, breadcrumbJsonLd } from '../lib/seo';
 
 const contacts = [
   { name: 'Mgr. Tomáš Frim', role: 'riaditeľ spoločnosti', tel: '+421915812764', telDisplay: '+421 915 812 764', email: 'frim@kovo-sklo.sk' },
@@ -14,10 +15,18 @@ const contacts = [
 export default function Kontakt() {
   return (
     <>
-      <Head>
-        <title>Kontakt - Stavomontáže, Kovo-Sklo s.r.o. | Banská Bystrica</title>
-        <meta name="description" content="Kontaktujte Stavomontáže, Kovo-Sklo s.r.o. - odborníci na oceľové konštrukcie a zámočnícke výrobky v Banskej Bystrici." />
-      </Head>
+      <SEO
+        title="Kontakt - Banská Bystrica"
+        description="Kontaktujte Stavomontáže, Kovo-Sklo s.r.o. v Banskej Bystrici. Odborníci na oceľové konštrukcie a zámočnícke výrobky. Tel: 048/ 414 15 04, e-mail: kovo-sklo@kovo-sklo.sk."
+        keywords="kontakt, Stavomontáže, Kovo-Sklo, Banská Bystrica, oceľové konštrukcie, zámočníctvo, telefón"
+        jsonLd={[
+          ORG_JSONLD,
+          breadcrumbJsonLd([
+            { name: 'Domov', path: '/' },
+            { name: 'Kontakt', path: '/kontakt' },
+          ]),
+        ]}
+      />
 
       <section className="intro-section">
         <div className="container">

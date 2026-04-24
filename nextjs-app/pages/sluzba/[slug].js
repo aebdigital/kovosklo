@@ -1,6 +1,8 @@
-import Head from 'next/head';
 import Link from 'next/link';
+import { useState } from 'react';
 import { services, serviceLinks } from '../../lib/services';
+import SEO from '../../components/SEO';
+import { breadcrumbJsonLd, serviceJsonLd } from '../../lib/seo';
 
 export async function getStaticPaths() {
   return {
@@ -47,13 +49,24 @@ function Block({ b }) {
   return null;
 }
 
-export default function ServicePage({ slug, svc }) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <>
-      <Head>
-        <title>{svc.title} - Stavomontáže, Kovo-Sklo s.r.o.</title>
-        <meta name="description" content={svc.lead} />
-      </Head>
+      <SEO
+        title={svc.title}
+        description={svc.lead}
+        keywords={`${svc.title.toLowerCase()}, Stavomontáže, Kovo-Sklo, Banská Bystrica, oceľové konštrukcie`}
+        image={svc.heroImg}
+        jsonLd={[
+          serviceJsonLd({ name: svc.title, description: svc.lead, path: `/sluzba/${slug}` }),
+          breadcrumbJsonLd([
+            { name: 'Domov', path: '/' },
+            { name: 'Služby', path: '/sluzba/ocelove-konstrukcie' },
+            { name: svc.title, path: `/sluzba/${slug}` },
+          ]),
+        ]}
+      />
 
       <section className="intro-section">
         <div className="container">
@@ -68,14 +81,18 @@ export default function ServicePage({ slug, svc }) {
         <div className="container">
           <div className="service-layout">
             <div className="services-sidebar">
-              <h3>Všetky služby</h3>
-              <div className="services-list">
+              <h3 className="sidebar-title" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+                Všetky služby
+                <span className={`dropdown-arrow ${isMenuOpen ? 'open' : ''}`}>▼</span>
+              </h3>
+              <div className={`services-list ${isMenuOpen ? 'menu-open' : ''}`}>
                 {serviceLinks.map((s) => (
                   <Link
                     key={s.slug}
                     href={`/sluzba/${s.slug}`}
-                    className={`service-item ${s.slug === slug ? 'active' : ''}`}
+                    className={`service-item ${s.slug === slug ? 'active' : ''} ${s.slug !== slug && !isMenuOpen ? 'hidden-on-mobile' : ''}`}
                     style={{ backgroundImage: `url('${s.bg}')` }}
+                    onClick={() => setIsMenuOpen(false)}
                   >
                     <span className="service-name">{s.label}</span>
                   </Link>

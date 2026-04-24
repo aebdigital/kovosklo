@@ -12,3 +12,58 @@
 @import './legacy/kontakt.css';
 @import './legacy/referencie.css';
 @import './legacy/produkty-sluzby.css';
+
+/* ===== Next.js overrides ===== */
+
+/* Mobile menu layering */
+.mobile-sidebar { z-index: 1100 !important; }
+.mobile-overlay { z-index: 1090 !important; }
+.navbar { z-index: 1000 !important; }
+.hamburger { z-index: 1101 !important; }
+
+/* Ensure hamburger reset when rendered as <button> */
+button.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  button.hamburger { display: flex; }
+}
+
+/* Parallax hint */
+.hero-bg-image { will-change: transform; }
+
+/* Service page CTA — blue background, white text (referencie.css imported after
+   produkty-sluzby.css was overriding these, so restore them explicitly). */
+.cta-section {
+  background: var(--primary-color) !important;
+  color: #fff !important;
+}
+.cta-section .cta-content h2,
+.cta-section .cta-content p {
+  color: #fff !important;
+}
+.cta-section .cta-content p { opacity: 0.9; }
+.cta-section .cta-btn {
+  background: #fff !important;
+  color: var(--primary-color) !important;
+}
+.cta-section .cta-btn:hover {
+  background: #f8f9fa !important;
+  transform: translateY(-2px);
+}
+
+/* The next section after the hero slides OVER the hero as you scroll */
+.home-products {
+  position: relative;
+  z-index: 3;
+  background: #fff;
+  margin-top: 0;
+}
+@media (max-width: 768px) {
+  .home-products {
+    margin-top: 0;
+  }
+}

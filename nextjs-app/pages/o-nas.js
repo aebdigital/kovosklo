@@ -1,5 +1,6 @@
-import Head from 'next/head';
 import { useEffect, useState } from 'react';
+import SEO from '../components/SEO';
+import { breadcrumbJsonLd } from '../lib/seo';
 
 const sliderImages = [
   { src: '/sources/referencie/Trolejbusove-DEPO-Zilina/1.webp', alt: 'Trolejbusové DEPO Žilina' },
@@ -22,10 +23,15 @@ export default function ONas() {
 
   return (
     <>
-      <Head>
-        <title>O nás - Stavomontáže, Kovo-Sklo s.r.o. | Oceľové konštrukcie a zámočníctvo</title>
-        <meta name="description" content="Spoznajte Stavomontáže, Kovo-Sklo s.r.o. - viac ako 40 rokov skúseností v oblasti oceľových konštrukcií a zámočníckych výrobkov." />
-      </Head>
+      <SEO
+        title="O nás - Oceľové konštrukcie a zámočníctvo"
+        description="Spoznajte Stavomontáže, Kovo-Sklo s.r.o. - viac ako 40 rokov skúseností v oblasti výroby a montáže oceľových konštrukcií, zámočníckych výrobkov a povrchovej úpravy v Banskej Bystrici."
+        keywords="o nás, Stavomontáže, Kovo-Sklo, oceľové konštrukcie, zámočníctvo, Banská Bystrica, certifikáty ISO"
+        jsonLd={breadcrumbJsonLd([
+          { name: 'Domov', path: '/' },
+          { name: 'O nás', path: '/o-nas' },
+        ])}
+      />
 
       <section className="intro-section">
         <div className="container">

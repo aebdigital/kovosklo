@@ -1,6 +1,7 @@
-import Head from 'next/head';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import SEO from '../components/SEO';
+import { ORG_JSONLD } from '../lib/seo';
 
 const heroImages = [
   { src: '/sources/referencie/Technicko-hygienicka-udrzba-zeleznicnych-kolajovych-vozidiel-Humenne/4.webp', alt: 'Technicko-hygienická údržba železničných koľajových vozidiel Humenné' },
@@ -36,16 +37,12 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>Stavomontáže, Kovo-Sklo s.r.o. - Oceľové konštrukcie a zámočnícke výrobky | Banská Bystrica</title>
-        <meta name="description" content="Stavomontáže, Kovo-Sklo s.r.o. - Firma s dlhoročnými skúsenosťami v oblasti výroby a montáže oceľových konštrukcií všetkých typov. Zámočnícke výrobky, povrchová úprava, predaj hutníckeho materiálu." />
-        <meta name="keywords" content="oceľové konštrukcie, zámočnícke výrobky, povrchová úprava, hutnícky materiál, klampiarske práce, Banská Bystrica, Stavomontáže" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://kovo-sklo.sk/" />
-        <meta property="og:title" content="Stavomontáže, Kovo-Sklo s.r.o. - Oceľové konštrukcie a zámočnícke výrobky" />
-        <meta property="og:description" content="Kvalitné riešenia v oblasti výroby a montáže oceľových konštrukcií a zámočníckych výrobkov s viac ako 40-ročnými skúsenosťami." />
-        <meta property="og:image" content="https://kovo-sklo.sk/sources/logo.webp" />
-      </Head>
+      <SEO
+        title="Oceľové konštrukcie a zámočnícke výrobky | Banská Bystrica"
+        description="Stavomontáže, Kovo-Sklo s.r.o. - Firma s dlhoročnými skúsenosťami v oblasti výroby a montáže oceľových konštrukcií všetkých typov. Zámočnícke výrobky, povrchová úprava, predaj hutníckeho materiálu."
+        keywords="oceľové konštrukcie, zámočnícke výrobky, povrchová úprava, hutnícky materiál, klampiarske práce, Banská Bystrica, Stavomontáže"
+        jsonLd={ORG_JSONLD}
+      />
 
       <section id="home" className="hero">
         <div className="hero-background">

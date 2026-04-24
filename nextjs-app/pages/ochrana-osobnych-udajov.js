@@ -1,13 +1,19 @@
-import Head from 'next/head';
+import SEO from '../components/SEO';
+import { breadcrumbJsonLd } from '../lib/seo';
 
 export default function OchranaOsobnychUdajov() {
   return (
     <>
-      <Head>
-        <title>Ochrana osobných údajov - Stavomontáže, Kovo-Sklo s.r.o.</title>
-        <meta name="description" content="Zásady ochrany osobných údajov spoločnosti Stavomontáže, Kovo-Sklo s.r.o. - informácie o spracúvaní osobných údajov, cookies a právach dotknutých osôb." />
-        <meta name="keywords" content="ochrana osobných údajov, GDPR, súkromie, cookies, Stavomontáže, Kovo-Sklo" />
-      </Head>
+      <SEO
+        title="Ochrana osobných údajov"
+        description="Zásady ochrany osobných údajov spoločnosti Stavomontáže, Kovo-Sklo s.r.o. - informácie o spracúvaní osobných údajov, cookies a právach dotknutých osôb."
+        keywords="ochrana osobných údajov, GDPR, súkromie, cookies, Stavomontáže, Kovo-Sklo"
+        noindex
+        jsonLd={breadcrumbJsonLd([
+          { name: 'Domov', path: '/' },
+          { name: 'Ochrana osobných údajov', path: '/ochrana-osobnych-udajov' },
+        ])}
+      />
 
       <style jsx>{`
         .privacy-content {

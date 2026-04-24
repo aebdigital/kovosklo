@@ -1,14 +1,33 @@
-import Head from 'next/head';
 import Link from 'next/link';
 import { projectsData, referencieOrder } from '../lib/projects';
+import SEO from '../components/SEO';
+import { breadcrumbJsonLd, SITE_URL } from '../lib/seo';
 
 export default function Referencie() {
   return (
     <>
-      <Head>
-        <title>Referencie - Stavomontáže, Kovo-Sklo s.r.o. | Portfolio oceľových konštrukcií</title>
-        <meta name="description" content="Pozrite si naše referencie a realizované projekty v oblasti oceľových konštrukcií a zámočníctva." />
-      </Head>
+      <SEO
+        title="Referencie - Portfolio oceľových konštrukcií"
+        description="Pozrite si naše referencie a realizované projekty v oblasti oceľových konštrukcií a zámočníctva. Viac ako 40 rokov skúseností, stovky dokončených projektov po celom Slovensku."
+        keywords="referencie, portfolio, oceľové konštrukcie, zámočníctvo, priemyselné stavby, mostné konštrukcie, Stavomontáže"
+        jsonLd={[
+          breadcrumbJsonLd([
+            { name: 'Domov', path: '/' },
+            { name: 'Referencie', path: '/referencie' },
+          ]),
+          {
+            '@context': 'https://schema.org',
+            '@type': 'CollectionPage',
+            name: 'Referencie - Stavomontáže, Kovo-Sklo s.r.o.',
+            url: `${SITE_URL}/referencie`,
+            hasPart: referencieOrder.slice(0, 10).map((slug) => ({
+              '@type': 'CreativeWork',
+              name: projectsData[slug]?.name,
+              url: `${SITE_URL}/projekt-detail/${slug}`,
+            })),
+          },
+        ]}
+      />
 
       <section className="intro-section">
         <div className="container">
