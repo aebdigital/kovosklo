@@ -48,7 +48,7 @@ function Block({ b }) {
   }
   return null;
 }
-
+export default function ServicePage({ slug, svc }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
