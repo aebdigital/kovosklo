@@ -1,0 +1,125 @@
+import Head from 'next/head';
+import { useEffect, useState } from 'react';
+
+const sliderImages = [
+  { src: '/sources/referencie/Trolejbusove-DEPO-Zilina/1.webp', alt: 'Trolejbusové DEPO Žilina' },
+  { src: '/sources/referencie/KFC-Banska-Bystrica/5.webp', alt: 'KFC Banská Bystrica' },
+  { src: '/sources/referencie/Hlohovec-most/1.webp', alt: 'Hlohovec most' },
+  { src: '/sources/referencie/Teplaren-Stefe-Banska-Bystrica/3.webp', alt: 'Tepláreň Stefe' },
+  { src: '/sources/referencie/Balkony-Banska-Bystrica/1.webp', alt: 'Balkóny Banská Bystrica' },
+  { src: '/sources/referencie/STK-Banska-Bystrica/1.webp', alt: 'STK Banská Bystrica' },
+  { src: '/sources/referencie/AUPARK-prestresenie-parkovacieho-domu/1.webp', alt: 'AUPARK' },
+  { src: '/sources/referencie/Chranena-dielna/1.webp', alt: 'Chránená dielňa' },
+];
+
+export default function ONas() {
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const t = setInterval(() => setCurrent((i) => (i + 1) % sliderImages.length), 4000);
+    return () => clearInterval(t);
+  }, []);
+
+  return (
+    <>
+      <Head>
+        <title>O nás - Stavomontáže, Kovo-Sklo s.r.o. | Oceľové konštrukcie a zámočníctvo</title>
+        <meta name="description" content="Spoznajte Stavomontáže, Kovo-Sklo s.r.o. - viac ako 40 rokov skúseností v oblasti oceľových konštrukcií a zámočníckych výrobkov." />
+      </Head>
+
+      <section className="intro-section">
+        <div className="container">
+          <div className="intro-content">
+            <span className="about-accent-line"></span>
+            <h1>O našej spoločnosti</h1>
+            <p>Sme firma s dlhoročnými skúsenosťami v oblasti výroby oceľových konštrukcií a zámočníckych výrobkov. Ponúkame komplexné riešenia od návrhu po realizáciu.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="about-main-section">
+        <div className="container">
+          <div className="about-content-wrapper">
+            <div className="about-text-content">
+              <span className="about-accent-line"></span>
+              <h2 className="about-main-title">Stavomontáže, Kovo-Sklo s.r.o.</h2>
+              <p className="about-description">Stavomontáže, Kovo-Sklo s.r.o. je firma s dlhoročnými skúsenosťami v oblasti výroby a montáže oceľových konštrukcií všetkých typov. Od jednoduchých zámočníckych výrobkov až po oceľové konštrukcie veľkých priemyselných objektov.</p>
+              <p className="about-description">Oceľové konštrukcie sa v priestoroch firmy v Banskej Bystrici vyrábajú už viac ako 40 rokov.</p>
+              <p className="about-description">Vďaka vlastnej výrobe je firma schopná flexibilne reagovať na požiadavky zákazníkov a pružne prispôsobiť termíny spracovania zákaziek.</p>
+              <p className="about-description">Náš cieľ je prvotriedna kvalita spracovania oceľových konštrukcií a tiež povrchovej úpravy.</p>
+              <p className="about-description">Každý z našich zákazníkov má možnosť konzultovať všetky svoje dotazy s kvalifikovanými technikmi, ktorí Vám radi poradia s návrhom a realizáciou vášho projektu.</p>
+              <p className="about-description">Vďaka našim skúsenostiam v oblasti oceľových a zámočníckych konštrukcií Vám ponúkneme optimálne riešenie s ohľadom na cenu, pri zachovaní vysokej kvality.</p>
+              <p className="about-description">Priaznivé hospodárske výsledky, záruka kvality vlastnej produkcie, dodržania termínov realizácií a plná záruka za vykonané práce a diela ju predurčujú ako správnu voľbu pre realizáciu Vašich stavebných zámerov a projektov v oblasti oceľových konštrukcií, zámočníckych výrobkov v súkromnom aj priemyselnom sektore. Ku každému projektu pristupujeme osobne a individuálne, každé zadanie je pre nás výzvou, ktorá nás posúva vpred.</p>
+              <p className="about-description"><strong>Budeme radi, ak sa našim obchodným partnerom stanete aj Vy.</strong></p>
+            </div>
+
+            <div className="about-image-content">
+              <div className="about-image-slider">
+                <div className="slider-container">
+                  <div className="slider-track">
+                    {sliderImages.map((img, i) => (
+                      <img
+                        key={img.src}
+                        src={img.src}
+                        alt={img.alt}
+                        className={`slider-image ${i === current ? 'active' : ''}`}
+                      />
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="about-main-section reverse">
+        <div className="container">
+          <div className="about-content-wrapper">
+            <div className="about-text-content">
+              <span className="about-accent-line"></span>
+              <h2 className="about-main-title">Výrobné priestory</h2>
+              <p className="about-description">Výrobný areál firmy Stavomontáže, Kovo-Sklo s.r.o. zaberá viac ako 9000 m². Pozostáva z viacerých prevádzok.</p>
+              <p className="about-description">Najväčšia je hlavná výrobná hala, kde prebieha proces výroby oceľových konštrukcií. To zahŕňa rôzne technologické procesy opracovania hutníckeho materiálu ako sú pílenie, vŕtanie otvorov, ohýbanie, zakružovanie, zváranie a brúsenie.</p>
+              <p className="about-description">V klampiarskej dielni sa prevádza strihanie, ohraňovanie, ohýbanie a zakružovanie plechov všetkých rozmerov a hrúbok.</p>
+              <p className="about-description">Špeciálna tvarová úprava oceľových výrobkov sústružením a frézovaním sa prevádza v kovoobrábacej dielni.</p>
+              <p className="about-description">Pre plynulosť technologického procesu výroby oceľových konštrukcií je potrebný včasný prísun materiálu pomocou vežového žeriavu na spracovanie a na montáž. K tomu sú nevyhnutné skladové priestory hutného materiálu, plechov, materiálu v procese výroby a samotných výrobkov určených k expedícii.</p>
+            </div>
+
+            <div className="about-image-content">
+              <div className="about-single-image">
+                <img src="/sources/VYROBA.webp" alt="Výrobné priestory" className="static-image" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="about-main-section" style={{ background: '#f8f9fa' }}>
+        <div className="container">
+          <div className="about-content-wrapper">
+            <div className="about-text-content">
+              <span className="about-accent-line"></span>
+              <h2 className="about-main-title">Certifikáty</h2>
+              <p className="about-description">Naša spoločnosť postupne získala medzinárodné osvedčenia kvality akosti:</p>
+              <div style={{ margin: '30px 0' }}>
+                <p className="about-description"><strong>ISO 9001:2015</strong> - Systémy manažérstva kvality</p>
+                <p className="about-description"><strong>EN ISO 3834-2:2005</strong> - Požiadavky na kvalitu pri fúznom zváraní kovových materiálov</p>
+                <p className="about-description"><strong>EN 1090-2:2018</strong> - Vykonávanie oceľových konštrukcií a hliníkových konštrukcií</p>
+              </div>
+              <p className="about-description">Tieto certifikáty potvrdzujú našu snahu o neustále zlepšovanie kvality poskytovaných služieb a dodržiavanie najvyšších štandardov v oblasti výroby oceľových konštrukcií.</p>
+            </div>
+
+            <div className="about-image-content">
+              <div className="gallery1" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 0 }}>
+                {[1, 2, 3, 4, 5, 6, 7].map((n) => (
+                  <img key={n} src={`/sources/${n}.webp`} alt={`Certifikát ${n}`} loading="lazy" style={{ width: '100%', height: 'auto', display: 'block' }} />
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}

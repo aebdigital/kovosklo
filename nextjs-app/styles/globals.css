@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import all legacy CSS to preserve exact styles */
+@import './legacy/base.css';
+@import './legacy/components/header.css';
+@import './legacy/components/footer.css';
+@import './legacy/components/hero.css';
+@import './legacy/home.css';
+@import './legacy/o-nas.css';
+@import './legacy/kontakt.css';
+@import './legacy/referencie.css';
+@import './legacy/produkty-sluzby.css';

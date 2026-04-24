@@ -1,5 +1,6 @@
 # OS files
 .DS_Store
+Thumbs.db
 
 # IDE files
 .claude/
@@ -8,3 +9,22 @@
 
 # Backups and tests
 kovosklo OG - test/
+
+# Node / Next.js
+**/node_modules/
+**/.next/
+**/out/
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Netlify
+.netlify/
